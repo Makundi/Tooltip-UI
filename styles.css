@@ -1,7 +1,8 @@
 .tooltip-container {
     position: relative;
     display: inline-block;
-    margin: 70px auto;
+    width: 90%;
+    margin: 10% auto;
 }
 
 nav {
@@ -31,11 +32,13 @@ nav a {
     transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.2s;
+    width: 120px; /* Fixed width for the tooltip */
 }
 
 .tooltiplink-1:hover .tooltip {
     visibility: visible;
     opacity: 1;
+    transition: opacity 0.2s;
 }
 
 .tooltiplink-2:hover .tooltip {
