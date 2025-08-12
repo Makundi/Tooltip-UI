@@ -1,72 +1,60 @@
 .tooltip-container {
-  position: relative;
-  display: inline-block;
-  margin: 70px auto;
+    position: relative;
+    display: inline-block;
+    margin: 70px auto;
 }
 
 nav {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
+
 nav a {
-  position: relative;
-  text-decoration: none;
-  color: black;
-  padding: 10px 15px;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
 }
 
 .tooltip {
-  visibility: hidden;
-  background-color: black;
-  color: white;
-  text-align: center;
-  border-radius: 5px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%; /* Position above the button */
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.2s;
+    visibility: hidden;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the link */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.2s;
 }
 
 .tooltiplink-1:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
-  bottom: 125%; /* Position above the button */
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.2s;
-}
-
-nav:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
 
 .tooltiplink-2:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
 
 .tooltiplink-3:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
+    visibility: visible;
+    opacity: 1;
 }
 
-a:hover {
-  color: blue;
-}
-
-.triangle-style {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: black transparent transparent;
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent;
 }
